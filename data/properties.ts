@@ -6,7 +6,7 @@ export type Property = {
   priceValue: number;
   type: "House" | "Apartment" | "Plot" | "Farmhouse";
   purpose: "For Sale";
-  size: "3.5 Marla" | "5 Marla" | "8 Marla" | "10 Marla" | "1 Kanal" | "2 Kanal" | "4 Kanal";
+  size: "2.5 Marla" | "3.5 Marla" | "5 Marla" | "8 Marla" | "10 Marla" | "1 Kanal" | "2 Kanal" | "4 Kanal";
   floor?: "Ground Floor" | "First Floor" | "Second Floor";
   bedrooms: number;
   bathrooms: number;
@@ -618,6 +618,14 @@ export const properties: Property[] = [
     image: "/images/WhatsApp Image 2026-09-21 at 3.11.54 PM (20).jpeg",
     description:
       "A modern 1 kanal farmhouse designed for comfortable family living with open outdoor space, greenery and contemporary residential features.",
+    features: [
+      "Residential Plot",
+      "Wide Road",
+      "Electricity",
+      "Water",
+      "Sewerage",
+      "Secure Location",
+    ],
   },
 
   {
@@ -635,6 +643,14 @@ export const properties: Property[] = [
     image: "/images/WhatsApp Image 2026-09-21 at 3.11.54 PM (17).jpeg",
     description:
       "A spacious 2 kanal farmhouse offering a premium lifestyle with large living areas, landscaped outdoor space and modern family amenities.",
+    features: [
+      "Residential Plot",
+      "Wide Road",
+      "Electricity",
+      "Water",
+      "Sewerage",
+      "Secure Location",
+    ],  
   },
 
   {
@@ -646,11 +662,19 @@ export const properties: Property[] = [
     type: "Farmhouse",
     purpose: "For Sale",
     size: "4 Kanal",
-    image: "/images/WhatsApp Image 2026-09-21 at 3.11.54 PM (10).jpeg",
-    description:
-      "A premium 4 kanal farmhouse offering extensive outdoor space, spacious accommodation and a private environment for luxury family living.",
     bedrooms: 6,
     bathrooms: 7,
     area: "4 Kanal",
+    image: "/images/WhatsApp Image 2026-09-21 at 3.11.54 PM (10).jpeg",
+    description:
+      "A premium 4 kanal farmhouse offering extensive outdoor space, spacious accommodation and a private environment for luxury family living.",
+    features: [
+      "Residential Plot",
+      "Wide Road",
+      "Electricity",
+      "Water",
+      "Sewerage",
+      "Secure Location",
+    ],    
   },
 ];
