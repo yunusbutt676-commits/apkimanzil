@@ -20,16 +20,16 @@ export default function Footer() {
               className="inline-flex items-center gap-2"
               aria-label="Apki Manzil Home"
             >
-             <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl sm:h-10 sm:w-10">
-              <Image
-                src="/images/logo.jpeg"
-                alt="Apki Manzil Logo"
-                fill
-                sizes="40px"
-                className="object-cover"
-                priority
-              />
-            </div>
+              <div className="relative h-9 w-9 shrink-0 overflow-hidden rounded-xl sm:h-10 sm:w-10">
+                <Image
+                  src="/images/logo.jpeg"
+                  alt="Apki Manzil Logo"
+                  fill
+                  sizes="40px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
 
               <span className="text-xl font-bold tracking-tight">
                 Apki <span className="text-teal-400">Manzil</span>
@@ -48,7 +48,10 @@ export default function Footer() {
               Explore
             </h3>
 
-            <nav className="mt-4 flex flex-col gap-1" aria-label="Footer navigation">
+            <nav
+              className="mt-4 flex flex-col gap-1"
+              aria-label="Footer navigation"
+            >
               <Link
                 href="/"
                 className="flex min-h-10 items-center rounded-lg text-sm text-gray-400 transition hover:text-green-500"
@@ -91,7 +94,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="mailto:apkimanzil@gmail.com"
+                href="mailto:apkimanzil.official@gmail.com"
                 className="block break-all transition hover:text-green-500"
               >
                 apkimanzil.official@gmail.com
@@ -99,70 +102,91 @@ export default function Footer() {
             </div>
           </div>
         </div>
-            
+
         {/* Social Media */}
-          <div className="mt-10 border-t border-gray-800 pt-8">
-            <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
-              <div>
-                <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
-                  Follow Us
-                </h3>
+        <div className="mt-10 border-t border-gray-800 pt-8">
+          <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-between">
+            <div>
+              <h3 className="text-sm font-semibold uppercase tracking-wide text-white">
+                Follow Us
+              </h3>
 
-              <div className="flex flex-wrap items-center gap-2 mt-3">
+              <p className="mt-1 text-sm text-gray-500">
+                Connect with Apki Manzil on social media.
+              </p>
+            </div>
 
-                <a
-                  href="https://www.youtube.com/@apkimanzil.com1"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Apki Manzil on YouTube"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#FF0000] hover:text-white active:scale-95"
-                >
-                  <SiYoutube size={20} />
-                </a>
+            <div className="flex flex-wrap items-center gap-2">
+              {/* YouTube */}
+              <a
+                href="https://www.youtube.com/@apkimanzil.com1"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Apki Manzil on YouTube"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#FF0000] hover:text-white active:scale-95"
+              >
+                <SiYoutube size={20} />
+              </a>
 
-                <a
-                  href="https://www.instagram.com/apkimanzil.official/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Apki Manzil on Instagram"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#E4405F] hover:text-white active:scale-95"
-                >
-                  <SiInstagram size={19} />
-                </a>
+              {/* Instagram */}
+              <a
+                href="https://www.instagram.com/apkimanzil.official/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Apki Manzil on Instagram"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#E4405F] hover:text-white active:scale-95"
+              >
+                <SiInstagram size={19} />
+              </a>
 
-                <a
-                  href="https://www.facebook.com/apkimanzil.com1?notif_id=1789561312645635&notif_t=profile_plus_admin_invite&ref=notif"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Apki Manzil on Facebook"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#1877F2] hover:text-white active:scale-95"
-                >
-                  <SiFacebook size={19} />
-                </a>
+              {/* Facebook */}
+              <a
+                href="https://www.facebook.com/apkimanzil.com1?notif_id=1789561312645635&notif_t=profile_plus_admin_invite&ref=notif"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Apki Manzil on Facebook"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-[#1877F2] hover:text-white active:scale-95"
+              >
+                <SiFacebook size={19} />
+              </a>
 
-                <a
-                  href="https://www.tiktok.com/@apkimanzil"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Apki Manzil on TikTok"
-                  className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-black hover:text-white active:scale-95"
-                >
-                  <SiTiktok size={19} />
-                </a>
-              </div>
+              {/* TikTok */}
+              <a
+                href="https://www.tiktok.com/@apkimanzil"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Apki Manzil on TikTok"
+                className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/5 text-gray-400 transition hover:bg-black hover:text-white active:scale-95"
+              >
+                <SiTiktok size={19} />
+              </a>
             </div>
           </div>
         </div>
 
-
         {/* Bottom */}
         <div className="mt-8 border-t border-gray-800 pt-6 sm:mt-10">
-          <div className="flex flex-col gap-3 text-sm text-white-500 sm:flex-row sm:items-center sm:justify-between">
+          <div className="flex flex-col gap-3 text-sm text-gray-500 sm:flex-row sm:items-center sm:justify-between">
             <p>
               © {new Date().getFullYear()} Apki Manzil. All rights reserved.
             </p>
 
             <p>Arabian City, Lahore</p>
+          </div>
+
+          {/* GmCodes9 Credit */}
+          <div className="mt-5 text-center">
+            <p className="text-xs text-white-600">
+              Website by{" "}
+              <a
+                href="https://gmcodes9.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-green-400 transition hover:text-teal-400"
+              >
+                GmCodes9
+              </a>
+            </p>
           </div>
         </div>
       </Container>
