@@ -18,6 +18,7 @@ import Footer from "@/components/Footer";
 import Container from "@/components/Container";
 import PropertyCard from "@/components/PropertyCard";
 import { properties } from "@/data/properties";
+import PropertyVideo from "@/components/PropertyVideo";
 
 type PropertyDetailsPageProps = {
   params: Promise<{
@@ -60,6 +61,14 @@ export default async function PropertyDetailsPage({
           </Container>
         </section>
 
+        {property.video && (
+          <PropertyVideo
+            src={property.video}
+            poster={property.videoPoster}
+            title={`${property.title} property walkthrough`}
+          />
+        )}
+        
         {/* PROPERTY */}
         <section className="pb-12 sm:pb-16">
           <Container>

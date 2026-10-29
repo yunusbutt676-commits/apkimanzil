@@ -12,6 +12,8 @@ export type Property = {
   bathrooms: number;
   area: string;
   image: string;
+  video?: string;
+  videoPoster?: string;
   description: string;
   features: string[];
 };
@@ -265,6 +267,7 @@ export const properties: Property[] = [
     bathrooms: 2,
     area: "3.5 Marla",
     image: "/images/WhatsApp Image 2026-09-21 at 12.33.45 PM.jpeg",
+    video: "/videos/ac4.mp4",
     description:
       "A modern ground-floor apartment offering efficient living space, contemporary interiors and convenient residential facilities in Arabian City, Lahore.",
     features: [
@@ -616,6 +619,7 @@ export const properties: Property[] = [
     bathrooms: 4,
     area: "1 Kanal",
     image: "/images/WhatsApp Image 2026-09-21 at 3.11.54 PM (20).jpeg",
+    video: "/videos/ac3.mp4",
     description:
       "A modern 1 kanal farmhouse designed for comfortable family living with open outdoor space, greenery and contemporary residential features.",
     features: [

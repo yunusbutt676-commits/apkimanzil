@@ -28,9 +28,17 @@ export default function PropertyCard({
           className="object-cover transition duration-500 group-hover:scale-105"
         />
 
+        {/* Purpose Badge */}
         <div className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-bold text-teal-700 shadow">
           {property.purpose}
         </div>
+
+        {/* Video Badge */}
+        {property.video && (
+          <span className="absolute bottom-4 left-4 rounded-full bg-black/75 px-3 py-1.5 text-xs font-semibold text-white shadow backdrop-blur-sm">
+            🎥 Video Tour
+          </span>
+        )}
       </div>
 
       <div className="p-5">

@@ -18,6 +18,7 @@ import Container from "@/components/Container";
 import PropertyCard from "@/components/PropertyCard";
 import SectionHeading from "@/components/SectionHeading";
 import { properties } from "@/data/properties";
+import PropertyVideo from "@/components/PropertyVideo";
 
 const categories = [
   {
@@ -118,6 +119,11 @@ export default function Home() {
             </div>
           </Container>
         </section>
+        
+        <PropertyVideo
+          src="/videos/ac1.mp4"
+          title="Apki Manzil property showcase"
+        />
 
         {/* FEATURED */}
         <section className="bg-white py-16 sm:py-20">
@@ -145,6 +151,11 @@ export default function Home() {
             </div>
           </Container>
         </section>
+        
+        <PropertyVideo
+          src="/videos/ac2.mp4"
+          title="Apki Manzil property showcase"
+        />
 
        {/* LOCATION */}
         <section className="bg-gray-50 py-16 sm:py-20">
@@ -273,6 +284,11 @@ export default function Home() {
             </div>
           </Container>
         </section>
+        
+        <PropertyVideo
+          src="/videos/ac5.mp4"
+          title="Apki Manzil View"
+        />
 
         {/* CTA */}
         <section className="bg-teal-700 py-16 sm:py-20">
